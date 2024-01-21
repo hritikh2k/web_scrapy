@@ -26,6 +26,5 @@ class BookspiderSpider(scrapy.Spider):
                 next_page_url = 'https://books.toscrape.com/catalogue/' + next_page
                 print('inside else catalogue----------------------------------------------------------------------------------')
 
-
             yield response.follow(next_page_url, callback= self.parse)
 
